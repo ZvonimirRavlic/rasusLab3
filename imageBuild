@@ -1,0 +1,16 @@
+docker container cp build/libs/config-server-microservice-0.0.1-SNAPSHOT.jar 631001c7e1fc:/opt/app.jar
+docker commit -c 'CMD ["java", "-jar", "opt/app.jar"]' -c 'EXPOSE 8888' 631001c7e1fc config-server:0.0.1-SNAPSHOT
+
+docker container cp build/libs/eureka-server-0.0.1-SNAPSHOT.jar 527f6ff10898:/opt/app.jar
+docker commit -c 'CMD ["java", "-jar", "opt/app.jar"]' -c 'EXPOSE 8761' 527f6ff10898 eureka-server:0.0.1-SNAPSHOT
+
+docker container cp build/libs/humidity-microservice-0.0.1-SNAPSHOT.jar 6d8dd67e62e6:/opt/app.jar
+docker container cp readings.csv 6d8dd67e62e6:/readings.csv
+docker commit -c 'CMD ["java", "-jar", "opt/app.jar"]' -c 'EXPOSE 8081' 6d8dd67e62e6 humidity-server:0.0.1-SNAPSHOT
+
+docker container cp build/libs/temperature-microservice-0.0.1-SNAPSHOT.jar 8e22b95eb39d:/opt/app.jar
+docker container cp readings.csv 8e22b95eb39d:/readings.csv
+docker commit -c 'CMD ["java", "-jar", "opt/app.jar"]' -c 'EXPOSE 8082' 8e22b95eb39d temperature-server:0.0.1-SNAPSHOT
+
+docker container cp build/libs/aggregator-microservice-0.0.1-SNAPSHOT.jar f3549e1bd1c0:/opt/app.jar
+docker commit -c 'CMD ["java", "-jar", "opt/app.jar"]' -c 'EXPOSE 8080' f3549e1bd1c0 aggregator-server:0.0.1-SNAPSHOT

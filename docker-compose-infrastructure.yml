@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  config:
+    build: .
+    image: config-server:0.0.1-SNAPSHOT
+    ports:
+      - 8888:8888
+    networks:
+      - local
+
+  eureka:
+    image: eureka-server:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+    networks:
+      - local
+
+
+networks:
+  local:
+    driver: bridge

@@ -1,0 +1,27 @@
+version: '3.1'
+services:
+  aggreg:
+    build: .
+    image: aggregator-server:0.0.1-SNAPSHOT
+    ports:
+      - 8080:8080
+    networks:
+      - local
+
+  humyd:
+    image: humidity-server:0.0.1-SNAPSHOT
+    ports:
+      - 8081:8081
+    networks:
+      - local
+
+  temp:
+    image: temperature-server:0.0.1-SNAPSHOT
+    ports:
+      - 8082:8082
+    networks:
+      - local
+
+networks:
+  local:
+    driver: bridge
