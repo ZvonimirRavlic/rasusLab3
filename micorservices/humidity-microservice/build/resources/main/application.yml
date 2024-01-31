@@ -1,0 +1,13 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: "humidity-microservice"
+
+eureka:
+    instance:
+        preferIpAddress: true
+        ip-address: host.docker.internal
+    client:
+        serviceUrl:
+            defaultZone: "http://host.docker.internal:8761/eureka"

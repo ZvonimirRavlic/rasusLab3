@@ -1,0 +1,28 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: "aggregator-microservice"
+    cloud:
+        config:
+            uri:
+#                "http://127.0.0.1:8888"
+                "http://host.docker.internal:8888"
+    config:
+        import: "configserver:"
+management:
+    endpoint:
+        refresh:
+            enabled: true
+    endpoints:
+        web:
+            exposure:
+                include: refresh
+
+eureka:
+    instance:
+        preferIpAddress: true
+        ip-address: host.docker.internal
+    client:
+        serviceUrl:
+            defaultZone: "http://host.docker.internal:8761/eureka"

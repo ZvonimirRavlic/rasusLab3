@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2337f647-ad80-4321-92a2-13ce5c0571d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/aggregatormicroservice/AggregatorMicroserviceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/aggregatormicroservice/controller/AggregatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/aggregatormicroservice/pojos/Reading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/aggregatormicroservice/pojos/YmlProps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/aggregatormicroservice/service/AggregatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server-microservice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server-microservice/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server-microservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../temperature-microservice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../temperature-microservice/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="xtsexweh" />
@@ -96,12 +89,12 @@
     <option name="myCommands">
       <command value="gradle build" />
       <command value="gradle clean build\" />
-      <command value="gradle clean build" />
       <command value="89f813506aa9" />
       <command value="gradle clean" />
+      <command value="gradle clean build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.aggregator-microservice [clean]">
+  <component name="RunManager" selected="Spring Boot.AggregatorMicroserviceApplication">
     <configuration name="aggregator-microservice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -225,6 +218,7 @@
       <workItem from="1704407116322" duration="599000" />
       <workItem from="1704458501150" duration="5638000" />
       <workItem from="1704557467442" duration="260000" />
+      <workItem from="1705268790129" duration="2275000" />
     </task>
     <servers />
   </component>
